@@ -87,6 +87,7 @@ Although Allen’s and Basic Time Relations could represent the qualitative temp
 13        	hasTimeOffset <duration1>;
 
 # Reference
-Please cite this work as: Li F, Du J, He Y, Song HY, Madkour M, Rao G, Xiang Y, Luo Y, Chen HW, Liu S, Wang L, Liu H, Xu H, Tao C. Time event ontology (TEO): to support semantic representation and reasoning of complex temporal relations of clinical events. J Am Med Inform Assoc. 2020 Jul 1;27(7):1046-1056. doi: 10.1093/jamia/ocaa058. PMID: 32626903; PMCID: PMC7647306.
+Please cite this work as: 
+Li F, Du J, He Y, Song HY, Madkour M, Rao G, Xiang Y, Luo Y, Chen HW, Liu S, Wang L, Liu H, Xu H, Tao C. Time event ontology (TEO): to support semantic representation and reasoning of complex temporal relations of clinical events. J Am Med Inform Assoc. 2020 Jul 1;27(7):1046-1056. doi: 10.1093/jamia/ocaa058. PMID: 32626903; PMCID: PMC7647306.
 
 
