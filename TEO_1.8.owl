@@ -1,0 +1,3094 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://sbmi.uth.edu/ontology/TEO.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://sbmi.uth.edu/ontology/TEO.owl">
+    <Prefix name="" IRI="https://sbmi.uth.edu/ontology/TEO.owl#"/>
+    <Prefix name="UO" IRI="http://purl.org/obo/owl/UO#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="list" IRI="http://www.co-ode.org/ontologies/list.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="snap" IRI="http://www.ifomis.org/bfo/1.1/snap#"/>
+    <Prefix name="span" IRI="http://www.ifomis.org/bfo/1.1/span#"/>
+    <Import>http://www.ifomis.org/bfo/1.1</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal>Chen, Henry</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal>Luo, Yi</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Du, Jingcheng</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>He, Oliver</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Li, Fang</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Tao, Cui</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal>http://creativecommons.org/licenses/by/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.8</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="snap:Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="span:ConnectedTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="span:ScatteredTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="span:TemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_Intervention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Observations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Others"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient_Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000042"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000043"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000045"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000046"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000048"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000049"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000051"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000053"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000054"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000055"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000058"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000059"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000060"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000061"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000062"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000063"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000065"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000066"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000067"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000068"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000069"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000070"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000071"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000072"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000073"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000074"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000080"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000081"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000082"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000083"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000084"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000088"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000089"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000091"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000094"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000095"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000098"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000099"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000101"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000102"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000103"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000104"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000105"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000106"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000107"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000108"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000110"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000111"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000112"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000113"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000114"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000116"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000117"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000118"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000119"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000120"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000121"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000122"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000123"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000124"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000125"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000126"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000127"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000162"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000190"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000191"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000192"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000193"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000194"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000195"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000196"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000197"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000198"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000199"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000200"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000201"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000202"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000203"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000204"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000205"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000207"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000208"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000209"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000210"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000211"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000213"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEO_0000214"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_and_Test_evaluation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000006"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000007"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000010"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000014"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000018"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000020"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000022"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000028"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000037"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000038"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000039"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000145"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000146"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000147"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000148"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000149"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000153"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000154"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000158"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000159"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000160"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000171"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000180"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000182"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TEO_0000183"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="skos:editorialNote"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000005"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000029"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000041"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000144"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000161"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000177"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000178"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000179"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000206"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEO_0000212"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000163"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000164"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000165"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000166"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000167"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000168"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000169"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TEO_0000170"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:editorialNote"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#TEO_0000172"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#TEO_0000173"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#TEO_0000176"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Clinical_Intervention"/>
+        <Class IRI="#TEO_0000025"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diagnosis"/>
+        <Class IRI="#TEO_0000025"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#TEO_0000025"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Observations"/>
+        <Class IRI="#TEO_0000025"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Others"/>
+        <Class IRI="#TEO_0000025"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_Accident"/>
+        <Class IRI="#TEO_0000025"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000011"/>
+        <Class IRI="#TEO_0000095"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000012"/>
+        <Class abbreviatedIRI="snap:Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000013"/>
+        <Class IRI="#TEO_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000017"/>
+        <Class IRI="#TEO_0000013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000019"/>
+        <Class IRI="#TEO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000021"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000024"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000030"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000031"/>
+        <Class IRI="#TEO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000034"/>
+        <Class abbreviatedIRI="span:ScatteredTemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000035"/>
+        <Class IRI="#TEO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000042"/>
+        <Class IRI="#TEO_0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000043"/>
+        <Class IRI="#TEO_0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000045"/>
+        <Class IRI="#TEO_0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000046"/>
+        <Class IRI="#TEO_0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000047"/>
+        <Class IRI="#TEO_0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000048"/>
+        <Class IRI="#TEO_0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000049"/>
+        <Class IRI="#TEO_0000084"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000050"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000051"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000052"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000053"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000054"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000055"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000056"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000057"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000058"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000059"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000060"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000061"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000062"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000063"/>
+        <Class IRI="#TEO_0000094"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000065"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000066"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000067"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000068"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000069"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000070"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000071"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000072"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000073"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000074"/>
+        <Class IRI="#TEO_0000017"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000080"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000081"/>
+        <Class IRI="#TEO_0000080"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000081"/>
+        <Class IRI="#TEO_0000095"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000082"/>
+        <Class IRI="#TEO_0000080"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000082"/>
+        <Class IRI="#TEO_0000095"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000083"/>
+        <Class IRI="#TEO_0000080"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000083"/>
+        <Class IRI="#TEO_0000095"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000084"/>
+        <Class IRI="#TEO_0000095"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000088"/>
+        <Class IRI="#TEO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000089"/>
+        <Class IRI="#TEO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000089"/>
+        <Class IRI="#TEO_0000127"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000091"/>
+        <Class IRI="#TEO_0000095"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000094"/>
+        <Class IRI="#TEO_0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000095"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000098"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000099"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000100"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000101"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000102"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000103"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000104"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000105"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000106"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000107"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000108"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000109"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000110"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000111"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000112"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000113"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000114"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000115"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000116"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000117"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000118"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000119"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000120"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000121"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000122"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000123"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000124"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000125"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000126"/>
+        <Class IRI="#TEO_0000091"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000127"/>
+        <Class IRI="#TEO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000190"/>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000191"/>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000192"/>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000193"/>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000194"/>
+        <Class IRI="#TEO_0000190"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000195"/>
+        <Class IRI="#TEO_0000190"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000196"/>
+        <Class IRI="#TEO_0000190"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000197"/>
+        <Class IRI="#TEO_0000191"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000198"/>
+        <Class IRI="#TEO_0000191"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000199"/>
+        <Class IRI="#TEO_0000191"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000200"/>
+        <Class IRI="#TEO_0000192"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000201"/>
+        <Class IRI="#TEO_0000192"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000202"/>
+        <Class IRI="#TEO_0000192"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000203"/>
+        <Class IRI="#TEO_0000193"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000204"/>
+        <Class IRI="#TEO_0000193"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000205"/>
+        <Class IRI="#TEO_0000193"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000207"/>
+        <Class IRI="#TEO_0000193"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000208"/>
+        <Class IRI="#TEO_0000193"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000209"/>
+        <Class IRI="#TEO_0000193"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000210"/>
+        <Class IRI="#TEO_0000193"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000211"/>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000213"/>
+        <Class IRI="#TEO_0000190"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TEO_0000214"/>
+        <Class IRI="#TEO_0000190"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_and_Test_evaluation"/>
+        <Class IRI="#TEO_0000025"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000019"/>
+        <Class IRI="#TEO_0000031"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000019"/>
+        <Class IRI="#TEO_0000035"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000019"/>
+        <Class IRI="#TEO_0000088"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000019"/>
+        <Class IRI="#TEO_0000089"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000019"/>
+        <Class IRI="#TEO_0000127"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000031"/>
+        <Class IRI="#TEO_0000035"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000031"/>
+        <Class IRI="#TEO_0000088"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000031"/>
+        <Class IRI="#TEO_0000089"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000031"/>
+        <Class IRI="#TEO_0000127"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000035"/>
+        <Class IRI="#TEO_0000088"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000035"/>
+        <Class IRI="#TEO_0000089"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000035"/>
+        <Class IRI="#TEO_0000127"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TEO_0000088"/>
+        <Class IRI="#TEO_0000089"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000163"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000164"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000165"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000166"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000167"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000168"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000169"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEO_0000162"/>
+        <NamedIndividual IRI="#TEO_0000170"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000002"/>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000002"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000002"/>
+        <ObjectProperty IRI="#TEO_0000154"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000002"/>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000003"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000003"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000003"/>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000003"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000006"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000007"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000010"/>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000010"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000010"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000010"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000014"/>
+        <ObjectProperty IRI="#TEO_0000149"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000014"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000014"/>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000014"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000016"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000016"/>
+        <ObjectProperty IRI="#TEO_0000153"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000016"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000016"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000018"/>
+        <ObjectProperty IRI="#TEO_0000149"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000018"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000018"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000018"/>
+        <ObjectProperty IRI="#TEO_0000160"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000020"/>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000020"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000020"/>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000020"/>
+        <ObjectProperty IRI="#TEO_0000159"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000022"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000028"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000037"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000037"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000037"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000037"/>
+        <ObjectProperty IRI="#TEO_0000160"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000038"/>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000038"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000038"/>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000038"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000039"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000145"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000145"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000145"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000145"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000146"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000146"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000146"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000146"/>
+        <ObjectProperty IRI="#TEO_0000158"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000147"/>
+        <ObjectProperty IRI="#TEO_0000149"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000147"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000147"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000147"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000148"/>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000148"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000148"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000148"/>
+        <ObjectProperty IRI="#TEO_0000160"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000149"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000149"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000150"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000151"/>
+        <ObjectProperty IRI="#TEO_0000039"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000152"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000153"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000153"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000154"/>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000154"/>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000155"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000156"/>
+        <ObjectProperty IRI="#TEO_0000039"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000157"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000158"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000158"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000159"/>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000159"/>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000160"/>
+        <ObjectProperty IRI="#TEO_0000151"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TEO_0000160"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000002"/>
+        <ObjectProperty IRI="#TEO_0000016"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000003"/>
+        <ObjectProperty IRI="#TEO_0000010"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000014"/>
+        <ObjectProperty IRI="#TEO_0000147"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000020"/>
+        <ObjectProperty IRI="#TEO_0000146"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000037"/>
+        <ObjectProperty IRI="#TEO_0000148"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000038"/>
+        <ObjectProperty IRI="#TEO_0000145"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000150"/>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000151"/>
+        <ObjectProperty IRI="#TEO_0000156"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000153"/>
+        <ObjectProperty IRI="#TEO_0000154"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000155"/>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TEO_0000158"/>
+        <ObjectProperty IRI="#TEO_0000159"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#TEO_0000018"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#TEO_0000149"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#TEO_0000160"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000002"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000003"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000010"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000014"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000016"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000018"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000037"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000147"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000148"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000149"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000150"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000152"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000153"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000154"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000155"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000157"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#TEO_0000160"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TEO_0000006"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TEO_0000007"/>
+        <Class IRI="#TEO_0000025"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TEO_0000022"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="span:TemporalInterval"/>
+            <Class IRI="#TEO_0000034"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TEO_0000028"/>
+        <Class abbreviatedIRI="span:TemporalInterval"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TEO_0000039"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="span:TemporalRegion"/>
+            <Class IRI="#TEO_0000025"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TEO_0000006"/>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TEO_0000028"/>
+        <Class abbreviatedIRI="span:TemporalInstant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TEO_0000039"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="span:TemporalRegion"/>
+            <Class IRI="#TEO_0000025"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TEO_0000171"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#TEO_0000171"/>
+            <Class IRI="#TEO_0000162"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TEO_0000171"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#TEO_0000029"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#TEO_0000020"/>
+        <ObjectProperty IRI="#TEO_0000038"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#TEO_0000020"/>
+        <ObjectProperty IRI="#TEO_0000145"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#TEO_0000038"/>
+        <ObjectProperty IRI="#TEO_0000146"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEO_0000005"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEO_0000015"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEO_0000029"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEO_0000040"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEO_0000041"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEO_0000144"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TEO_0000015"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#TEO_0000015"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TEO_0000029"/>
+        <Class abbreviatedIRI="span:TemporalRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#TEO_0000005"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                <Literal>[0-9]*+[:]+[0-9]*+[:]+[0-9]*</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TEO_0000041"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TEO_0000144"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                <Literal>([0-9]*+(\.[0-9]*)?+[Y])?([0-9]*+(\.[0-9]*)?+[M])?([0-9]*+(\.[0-9]*)?+[W])?([0-9]*+(\.[0-9]*)?+[D])?([0-9]*+(\.[0-9]*)?+[H])?([0-9]*+(\.[0-9]*)?+[m])?([0-9]*+(\.[0-9]*)?+[s])?</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TEO_0000177"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TEO_0000206"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <AbbreviatedIRI>span:TemporalInstant</AbbreviatedIRI>
+        <Literal>TimeInstant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <AbbreviatedIRI>span:TemporalInterval</AbbreviatedIRI>
+        <Literal>TimeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Clinical_Intervention</IRI>
+        <Literal>Clinical Intervention</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Clinical_Intervention</IRI>
+        <Literal>Any clinical intervention done on a patient, including medication administration, surgeries, behavioral interventions, clinical trial process, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Diagnosis</IRI>
+        <Literal>Diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Diagnosis</IRI>
+        <Literal>Diseases that have been diagnosed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Documentation</IRI>
+        <Literal>Documentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Documentation</IRI>
+        <Literal>All documentation and non-clinical actions, like check-in, discharge, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Observations</IRI>
+        <Literal>Observations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Observations</IRI>
+        <Literal>Symptoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Others</IRI>
+        <Literal>Others</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Others</IRI>
+        <Literal>All other events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Patient_Accident</IRI>
+        <Literal>Patient Accident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Patient_Accident</IRI>
+        <Literal>All non-clinical actions done on/by the patient, like blunt force, injuries, falls, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000002</IRI>
+        <Literal>before</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#TEO_0000002</IRI>
+        <Literal>&quot;prior to&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000002</IRI>
+        <Literal>Interval relation. The source event ended before the start of the target event. It is the same as the point relation &quot;endBeforeStart&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000003</IRI>
+        <Literal>during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000003</IRI>
+        <Literal>Interval relation. The source event started after and ended before the target event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000005</IRI>
+        <Literal>hasNormalizedTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000005</IRI>
+        <Literal>use to represent the normalized view of the time expression of the given instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000006</IRI>
+        <Literal>hasEndTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000006</IRI>
+        <Literal>Describes the end time of an interval. The domain is a time interval. The range is a time instant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000007</IRI>
+        <Literal>hasValidTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000007</IRI>
+        <Literal>To link an event with its specific timestamps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000010</IRI>
+        <Literal>contain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000010</IRI>
+        <Literal>Interval relation. The source event happened before and ended after the target event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000011</IRI>
+        <Literal>Holiday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000012</IRI>
+        <Literal>Time Granularity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>#TEO_0000012</IRI>
+        <Literal>We use grannularity ot define the extent to which the time expression is broken down into small parts, such as day, year, month, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000013</IRI>
+        <Literal>US Holiday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000014</IRI>
+        <Literal>start</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000014</IRI>
+        <Literal>Interval relation. Two events started at the same time and the source event ended before the end of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000015</IRI>
+        <Literal>hasOrigTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000015</IRI>
+        <Literal>use to represent the original  time expression of the instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000016</IRI>
+        <Literal>after</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+        <IRI>#TEO_0000016</IRI>
+        <Literal>&quot;post to&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000016</IRI>
+        <Literal>Interval relation. The source event happened after target event. It is the same as the point relation &quot;startAfterEnd&quot;. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000017</IRI>
+        <Literal>US Federal Holiday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:editorialNote"/>
+        <IRI>#TEO_0000017</IRI>
+        <Literal>Defined according to http://en.wikipedia.org/wiki/Public_holidays_in_the_United_States</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000018</IRI>
+        <Literal>equal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000018</IRI>
+        <Literal>Interval relation. Two events happened at the same time. It is true when both events are associated with either timeinstants or timeintervals. When both events are associated with time intervals, they must start at the same time and end at the same time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000019</IRI>
+        <Literal>First week of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000019</IRI>
+        <Literal>The first week of a particular month. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000020</IRI>
+        <Literal>meet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000020</IRI>
+        <Literal>Interval relation. The source event ended at (the same time as) the start of the target event. It is the same as the point relation &quot;endEqualStart&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000021</IRI>
+        <Literal>New Year&apos;s Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000021</IRI>
+        <Literal>Celebrates beginning of the Gregorian calendar year. Festivities include counting down to midnight (12:00 AM) on the preceding night, New Year&apos;s Eve. Traditional end of holiday season.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000022</IRI>
+        <Literal>hasDuration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000022</IRI>
+        <Literal>Describes the duration of a time interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000024</IRI>
+        <Literal>TimePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000024</IRI>
+        <Literal>A prototype of the repeating interval, specifying the duration of each occurrence and anchors the PeriodicTimeInterval sequence at a certain point in time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <IRI>#TEO_0000024</IRI>
+        <Literal>In &quot;Every eight hours for two minutes &quot;, 2 minutes can be represented using timephase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000025</IRI>
+        <Literal>Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000028</IRI>
+        <Literal>hasStartTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000028</IRI>
+        <Literal>Describes the start time of a time interval. The domain is a time interval and the range is a time instant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TEO_0000029</IRI>
+        <Literal>describe the granularity of a temporal element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000029</IRI>
+        <Literal>hasGranularity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000030</IRI>
+        <Literal>Week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000030</IRI>
+        <Literal>Defines a particular week, where the sequence of the weekdays can be defined using TimeSequence. For example, one can define a week from Monday to Sunday, from Sunday to Sat, or from Tue to Mon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000031</IRI>
+        <Literal>Second week of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000031</IRI>
+        <Literal>The second week of a particular month. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000034</IRI>
+        <Literal>PeriodicTimeInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+            <Literal>HL7</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000034</IRI>
+        <Literal> An interval of time that recurs periodically</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:editorialNote"/>
+        <IRI>#TEO_0000034</IRI>
+        <Literal>Could have a start time and an end time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000035</IRI>
+        <Literal>third week of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000035</IRI>
+        <Literal>The third week of a particular month. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000037</IRI>
+        <Literal>finish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000037</IRI>
+        <Literal>Interval relation. Two events ended at the same time and the source event started after the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000038</IRI>
+        <Literal>overlap</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000038</IRI>
+        <Literal>Interval relation. Two events have overlap on the timeline. The source event starts before and  ends before the end of the target event and the source event ends after the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000039</IRI>
+        <Literal>temporalRelation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000039</IRI>
+        <Literal>The super set of the temporal relations defined in the ontology. Akin to Allen&apos;s temporal operators, but are defined between events instead of time intervals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:editorialNote"/>
+        <IRI>#TEO_0000039</IRI>
+        <Literal>An example instant. Maybe deleted later.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TEO_0000040</IRI>
+        <Literal>describe the unit of a duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000040</IRI>
+        <Literal>hasDurationUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000041</IRI>
+        <Literal>hasDurationValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000041</IRI>
+        <Literal>capture the value of a duration, e.g., in &quot;2 hours&quot;, 2 is the duation value and hour is the duation unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000042</IRI>
+        <Literal>Monday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000042</IRI>
+        <Literal>The first day of a calendar week starting from Monday. Monday is after Sunday and before Tuesday.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000043</IRI>
+        <Literal>Tuesday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000043</IRI>
+        <Literal>The second day of a calendar week starting from Monday. Tuesday is after Monday and before Wednesday.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000045</IRI>
+        <Literal>Wednesday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000045</IRI>
+        <Literal>The thrid day of a calendar week starting from Monday.  Wednesday is after Tuesday and before Thursday.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000046</IRI>
+        <Literal>Thursday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000046</IRI>
+        <Literal>The fourth day of a calendar week starting from Monday. Thursday is after Wednesday and before Friday.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000047</IRI>
+        <Literal>Friday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000047</IRI>
+        <Literal>The fifth day of a calendar week starting from Monday. Friday is after Thursday and before Saturday.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000048</IRI>
+        <Literal>Saturday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000048</IRI>
+        <Literal>The sixth day of a calendar week starting from Monday. Saturday is after Friday and before Sunday.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000049</IRI>
+        <Literal>Sunday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000049</IRI>
+        <Literal>The last day of a calendar week starting from Monday. Sunday is after Saturday and before the Monday next week.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000050</IRI>
+        <Literal>Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000050</IRI>
+        <Literal>Define a particular Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000051</IRI>
+        <Literal>Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000051</IRI>
+        <Literal>Define a particuar year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000052</IRI>
+        <Literal>January</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000053</IRI>
+        <Literal>February</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000054</IRI>
+        <Literal>March</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000055</IRI>
+        <Literal>April</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000056</IRI>
+        <Literal>May</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000057</IRI>
+        <Literal>June</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000058</IRI>
+        <Literal>July</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000059</IRI>
+        <Literal>August</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000060</IRI>
+        <Literal>September</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000061</IRI>
+        <Literal>October</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000062</IRI>
+        <Literal>November</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000063</IRI>
+        <Literal>December</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000065</IRI>
+        <Literal>Birthday of Martin Luther King, Jr.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000065</IRI>
+        <Literal>Honors Martin Luther King, Jr., Civil Rights leader, who was actually born on January 15, 1929; combined with other holidays in several states. First occured 1986.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000065</IRI>
+        <Literal>Third Monday in January</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000066</IRI>
+        <Literal>Inauguration Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000066</IRI>
+        <Literal>First January 20th following a Presidential election</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000066</IRI>
+        <Literal>Observed only by federal government employees in Washington, D.C., and the border counties of Maryland and Virginia, in order to relieve congestion that occurs with this major event. Swearing-in of President of the United States and Vice President of the United States. Celebrated every fourth year. Note: Takes place on January 21 if the 20th is a Sunday (although the President is still privately inaugurated on the 20th). If Inauguration Day falls on a Saturday, the preceding Friday is not a federal holiday.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000067</IRI>
+        <Literal>Washington&apos;s Birthday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000067</IRI>
+        <Literal>Third Monday in February</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000068</IRI>
+        <Literal>Memorial Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000068</IRI>
+        <Literal>Last Monday in May</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000069</IRI>
+        <Literal>Independence Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000069</IRI>
+        <Literal>July 4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000070</IRI>
+        <Literal>Labor Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000070</IRI>
+        <Literal>First Monday in September. became a federal holiday in 1894</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000071</IRI>
+        <Literal>Columbus Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000071</IRI>
+        <Literal>Second Monday in October. Start 1937</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000072</IRI>
+        <Literal>Veterans Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000072</IRI>
+        <Literal>November 11</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000073</IRI>
+        <Literal>Thanksgiving Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000073</IRI>
+        <Literal>Fourth Thursday in November</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000074</IRI>
+        <Literal>Christmas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000074</IRI>
+        <Literal>December 25</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:editorialNote"/>
+        <IRI>#TEO_0000074</IRI>
+        <Literal>pattern: (hasCalendarPatternForm value &quot;DM25&quot;)
+ and (hasCalendarPatternForm value &quot;MY12&quot;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000080</IRI>
+        <Literal>Relative Time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000081</IRI>
+        <Literal>Today</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000082</IRI>
+        <Literal>Tomorrow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000082</IRI>
+        <Literal>One day after Today</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000083</IRI>
+        <Literal>Yesterday</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000084</IRI>
+        <Literal>Week Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000084</IRI>
+        <Literal>The parent class of the 7 week days</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000088</IRI>
+        <Literal>fourth week of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000088</IRI>
+        <Literal>The fourth week of a particular month. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000089</IRI>
+        <Literal>fifth week of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000089</IRI>
+        <Literal>The fifth week of a particular month. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000091</IRI>
+        <Literal>Month Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000091</IRI>
+        <Literal>Define a paticular day that occurs on a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000094</IRI>
+        <Literal>Calendar Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000094</IRI>
+        <Literal>The parent class of the 12 calendar month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000095</IRI>
+        <Literal>Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000095</IRI>
+        <Literal>Define a particular day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000098</IRI>
+        <Literal>Day 1 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000099</IRI>
+        <Literal>Day 2 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000100</IRI>
+        <Literal>Day 3 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000101</IRI>
+        <Literal>Day 4 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000102</IRI>
+        <Literal>Day 5 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000103</IRI>
+        <Literal>Day 6 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000104</IRI>
+        <Literal>Day 7 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000105</IRI>
+        <Literal>Day 8 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000106</IRI>
+        <Literal>Day 9 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000107</IRI>
+        <Literal>Day 10 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000108</IRI>
+        <Literal>Day 11 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000109</IRI>
+        <Literal>Day 12 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000110</IRI>
+        <Literal>Day 13 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000111</IRI>
+        <Literal>Day 14 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000112</IRI>
+        <Literal>Day 15 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000113</IRI>
+        <Literal>Day 16 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000114</IRI>
+        <Literal>Day 17 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000115</IRI>
+        <Literal>Day 18 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000116</IRI>
+        <Literal>Day 19 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000117</IRI>
+        <Literal>Day 20 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000118</IRI>
+        <Literal>Day 21 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000119</IRI>
+        <Literal>Day 22 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000120</IRI>
+        <Literal>Day 23 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000121</IRI>
+        <Literal>Day 24 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000122</IRI>
+        <Literal>Day 25 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000123</IRI>
+        <Literal>Day 28 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000124</IRI>
+        <Literal>Day 29 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000125</IRI>
+        <Literal>Day 30 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000126</IRI>
+        <Literal>Day 31 of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000127</IRI>
+        <Literal>last week of a month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000144</IRI>
+        <Literal>hasDurationPattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000144</IRI>
+        <Literal>In the form of &quot;4Y5M3W0D0H0m0s&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000145</IRI>
+        <Literal>overlappedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000145</IRI>
+        <Literal>Interval relation. Two events have overlap on the timeline. The source event starts after and ends after the start of the target event and the source event starts before the end of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000146</IRI>
+        <Literal>metBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000146</IRI>
+        <Literal>Interval relation. The source event started at (the same time as) the end of the target event. It is the same as the point relation &quot;startEqualEnd&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000147</IRI>
+        <Literal>startedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000147</IRI>
+        <Literal>Interval relation. Two events started at the same time and the source event ended after the end of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000148</IRI>
+        <Literal>finishedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000148</IRI>
+        <Literal>Interval relation. Two events ended at the same time and the source event started before the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000149</IRI>
+        <Literal>startEqualStart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000149</IRI>
+        <Literal>Point relation. The source event started at (the same time as) the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000150</IRI>
+        <Literal>startBeforeStart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000150</IRI>
+        <Literal>Point relation. The source event started before the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000151</IRI>
+        <Literal>startBeforeEnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000151</IRI>
+        <Literal>Point relation. The source event started before the end of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000152</IRI>
+        <Literal>startAfterStart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000152</IRI>
+        <Literal>Point relation. The source event started after the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000153</IRI>
+        <Literal>startAfterEnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000153</IRI>
+        <Literal>Point relation. The source event starts after the end of the target event. It is the same as &quot;after&quot; in Allen&apos;s Interval Algebra.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000154</IRI>
+        <Literal>endBeforeStart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000154</IRI>
+        <Literal>Point relation. The source event ended beofre the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000155</IRI>
+        <Literal>endBeforeEnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000155</IRI>
+        <Literal>Point relation. The source event ended before the end of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000156</IRI>
+        <Literal>endAfterStart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000156</IRI>
+        <Literal>Point relation. The source event ended after the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000157</IRI>
+        <Literal>endAfterEnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000157</IRI>
+        <Literal>Point relation. The source event ends after the end of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000158</IRI>
+        <Literal>startEqualEnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000158</IRI>
+        <Literal>Point relation. the source event started at (the same time as) the end of the target event. It is the same as the interval relation &quot;metBy&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000159</IRI>
+        <Literal>endEqualStart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000159</IRI>
+        <Literal>Point relation. The source event ended at (the same time as) the start of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000160</IRI>
+        <Literal>endEqualEnd</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000160</IRI>
+        <Literal>Point relation. The source event ended at (the same time as) the end of the target event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000161</IRI>
+        <Literal xml:lang="en">hasApproximation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000161</IRI>
+        <Literal>covering expressions of how the world might be and should be. This includes expressions of necessity, permissibility and probability, and negations of these</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000162</IRI>
+        <Literal xml:lang="en">Granularity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000162</IRI>
+        <Literal>Different units of measures to represent different levels of granularity. It has eight units as the instances: &quot;Second&quot;, &quot;Minute&quot;, &quot;Hour&quot;, &quot;Day&quot;, &quot;Week&quot;, &quot;Month&quot;, &quot;Season&quot;, &quot;Year&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000163</IRI>
+        <Literal xml:lang="en">Second</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000164</IRI>
+        <Literal xml:lang="en">Minute</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000165</IRI>
+        <Literal xml:lang="en">Hour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000166</IRI>
+        <Literal xml:lang="en">Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000167</IRI>
+        <Literal xml:lang="en">Week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000168</IRI>
+        <Literal xml:lang="en">Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000169</IRI>
+        <Literal xml:lang="en">Season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000170</IRI>
+        <Literal xml:lang="en">Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000171</IRI>
+        <Literal xml:lang="en">hasGranularity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000171</IRI>
+        <Literal>Describes the granularity of a temporal element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000172</IRI>
+        <Literal xml:lang="en">hasGranularity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000172</IRI>
+        <Literal>Used to desribe different units of measures to represent different levels of granularity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000173</IRI>
+        <Literal xml:lang="en">hasApproximation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000173</IRI>
+        <Literal>covering expressions of how the triple might be and should be. This includes expressions of necessity, permissibility and probability, and negations of these</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000176</IRI>
+        <Literal xml:lang="en">hasTimeOffset</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000176</IRI>
+        <Literal>Defines the relative timing of a pair of events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000177</IRI>
+        <Literal xml:lang="en">hasDurationOriginForm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000177</IRI>
+        <Literal>capture the orign form of the duration string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000178</IRI>
+        <Literal xml:lang="en">hasRepeatTimes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000178</IRI>
+        <Literal>Describe the number of units that re-occur in a TimePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000179</IRI>
+        <Literal xml:lang="en">hasSeverity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000179</IRI>
+        <Literal>to declare the severity of a lab test or symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000180</IRI>
+        <Literal xml:lang="en">hasPeriod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000180</IRI>
+        <Literal>Describes the interval between the start time of two units in a TimePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000182</IRI>
+        <Literal xml:lang="en">hasRepeatUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000182</IRI>
+        <Literal>Describes the uint that ocurrs periodically in a TimePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000183</IRI>
+        <Literal xml:lang="en">hasRepeatUnitInterval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000183</IRI>
+        <Literal>Describes the interval between two repeat units of a TimePhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000190</IRI>
+        <Literal xml:lang="en">Part of the Day</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000191</IRI>
+        <Literal xml:lang="en">Part of the Week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000192</IRI>
+        <Literal xml:lang="en">Part of the Month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000193</IRI>
+        <Literal xml:lang="en">Part of the Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000194</IRI>
+        <Literal xml:lang="en">Morning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000195</IRI>
+        <Literal xml:lang="en">Noon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000196</IRI>
+        <Literal xml:lang="en">Evening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000197</IRI>
+        <Literal xml:lang="en">The beginning of the week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000198</IRI>
+        <Literal xml:lang="en">The middle of the week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000199</IRI>
+        <Literal xml:lang="en">The end of the week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000200</IRI>
+        <Literal xml:lang="en">The beginning of the month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000201</IRI>
+        <Literal xml:lang="en">The middle of the month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000202</IRI>
+        <Literal xml:lang="en">The end of the month</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000203</IRI>
+        <Literal xml:lang="en">The beginning of the year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000204</IRI>
+        <Literal xml:lang="en">The middle of the year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000205</IRI>
+        <Literal xml:lang="en">The end of the year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000206</IRI>
+        <Literal xml:lang="en">hasDescription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#TEO_0000206</IRI>
+        <Literal>add the detailed description to the event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000207</IRI>
+        <Literal xml:lang="en">Spring</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000208</IRI>
+        <Literal xml:lang="en">Fall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000209</IRI>
+        <Literal xml:lang="en">Summer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000210</IRI>
+        <Literal xml:lang="en">Winter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000211</IRI>
+        <Literal xml:lang="en">Time of the Age</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000212</IRI>
+        <Literal xml:lang="en">hasAgeValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000213</IRI>
+        <Literal xml:lang="en">AM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TEO_0000214</IRI>
+        <Literal xml:lang="en">PM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Test_and_Test_evaluation</IRI>
+        <Literal>Test and Test evaluation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>#Test_and_Test_evaluation</IRI>
+        <Literal>Test, examination, or the results and evaluation from the test or examination</Literal>
+    </AnnotationAssertion>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="#TEO_0000172"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="#TEO_0000172"/>
+        <IRI>#TEO_0000162</IRI>
+    </AnnotationPropertyRange>
+    <AnnotationPropertyRange>
+        <AnnotationProperty IRI="#TEO_0000173"/>
+        <AbbreviatedIRI>xsd:string</AbbreviatedIRI>
+    </AnnotationPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
