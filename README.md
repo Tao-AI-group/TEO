@@ -6,7 +6,7 @@ Time Event Ontology (TEO) is designed to formally represent both structured and 
 
 Figure 1. Overall Framework of TEO Design and Reasoning Support
 
-## METHOD AND ONTOLOGY DESIGN  
+## ONTOLOGY DESIGN  
 ### Meta-level Design 
 Under the contemporary paradigm, an ontology comprises classes (concepts), individuals (instances) and properties. A class is a set of entities within a domain that defines a group of individuals that share some common properties. Individuals are instances (concrete examples) of classes. Properties depict the characteristics of a class, stating relationships between individuals (object properties) or from individuals to data values (data properties). For the object property, domain limits the individuals to which the property can be applied, and range limits the individuals that the property may have as its value. The third type of property, annotation properties, are used to associate additional information with ontologies, entities, and axioms. TEO is defined using the OWL. Since TEO aims to model temporal expressions and relations of clinical events, time and event are the two main OWL classes. The class time instant is designed to represent a single time point, and class granularity is used to describe the basic level of the time unit. Class time interval is used to represent a continuous period, combined with class duration to describe its time length. A subclass periodic time interval is devised to describe a periodically or repeatedly occurred time interval. Moreover, a set of object properties are introduced to depict relations, particularly the temporal relations, between classes, and a variety of data properties to describe the data features.  
 
@@ -86,6 +86,7 @@ Although Allen’s and Basic Time Relations could represent the qualitative temp
 12        	rdf:subject <event2>;
 13        	hasTimeOffset <duration1>;
 
-
+# Reference
+Please cite this work as: Li F, Du J, He Y, Song HY, Madkour M, Rao G, Xiang Y, Luo Y, Chen HW, Liu S, Wang L, Liu H, Xu H, Tao C. Time event ontology (TEO): to support semantic representation and reasoning of complex temporal relations of clinical events. J Am Med Inform Assoc. 2020 Jul 1;27(7):1046-1056. doi: 10.1093/jamia/ocaa058. PMID: 32626903; PMCID: PMC7647306.
 
 
